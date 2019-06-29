@@ -1,0 +1,20 @@
+<h1>Would you like to take a math quiz?</h1>
+
+<a href="/add">
+  <div class="boo" href="/add">
+    <h4>
+      <a href="/add" class="boo_t">Take</a>
+    </h4>
+  </div>
+</a>
+
+<% @list.each do |item| %>
+ <div class='list-wrap'>
+    <li>
+        <div>
+          <%= item.name %> - <%= item.correct %> out of <%= item.questions.all.length %>
+          - and took <%= (item.created_at - item.updated_at).round * (-1) %> seconds total
+        </div>
+    </li>
+  </div>
+<% end %>

@@ -1,0 +1,12 @@
+<h1><%= @question.x %> <%= @question.operation %> <%= @question.y.to_s %> = ?</h1>
+<i>Question: <%= @@quiz.questions.length %></i>
+
+<form action="/quiz_begin/<%= @question.operation %>" method="post" class="form form-group">
+
+  <label for="answer">Solution:</label><br>
+  <input class="form-control" id="answer" name="answer" type="number">
+
+  <button type="submit">Submit</button>
+</form>
+
+<a href="/"> End </a>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>School List</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <style media="screen">
+
+      .title {
+        text-decoration: none;
+        color: black;
+      }
+
+      .title:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      html {
+        position: relative;
+        min-height: 100%;
+        border-top: 5px solid #337ab7;
+      }
+      body {
+        margin: 0 0 100px;
+        background-color: rgb(225, 225, 225);
+        height: 100%;
+      }
+      a {
+        color: #337ab7;
+      }
+      a:hover {
+        color: #034a87;
+      }
+      button {
+        background-color: #337ab7;
+        color: white;
+        padding: 1em;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      .btn:hover {
+        text-decoration: none;
+        color: white;
+      }
+      button:hover {
+        background-color: #236aa7;
+        color: white;
+      }
+      .black:hover {
+        color: rgb(53, 53, 53);
+        cursor: default;
+      }
+      .header {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        color: black;
+        text-decoration: none;
+        background-color: lightgrey;
+        text-align: center;
+        height: 70px;
+        border-bottom: 5px solid #337ab7;
+        margin: 0;
+      }
+      .header:hover {
+        color: black;
+        text-decoration: none;
+        border-bottom: 5px solid #034a87;
+      }
+      .main {
+        padding-top: 80px;
+      }
+      .container {
+        text-align: left;
+        max-width: 1000px;
+        margin: auto;
+        /* border-left: black solid 1px;
+        border-right: black solid 1px;
+        padding-bottom: 60% */
+      }
+      .container-in {
+        text-align: left;
+        max-width: 1000px;
+        margin: 10px;
+      }
+      textarea {
+        display: block;
+        width: 91%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        min-width: 10px;
+      }
+
+      input {
+        display: block;
+        width: 91%;
+        height: 20px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .input {
+        height: 20px;
+      }
+      .list-wrap {
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        height: 40px;
+        background-color: #efefef;
+      }
+      p {
+        padding: 0;
+      }
+      .form {
+        padding-top: 10px;
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #efefef;
+      }
+      .remove {
+        margin: -20px 0 0 auto;
+        display: block;
+        width: 45px;
+      }
+
+      .remove:hover {
+        text-decoration: none;
+      }
+
+      .edit {
+        margin: -20px 60px 0 auto;
+        display: block;
+        width: 20px;
+      }
+
+      .edit:hover {
+        text-decoration: none;
+      }
+
+      .add {
+        position: absolute;
+        top: 19px;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .boo {
+        background-color: #337ab7;
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        animation: pulse 0.8s linear infinite running;
+        border: 3px solid #337ab7;
+      }
+
+      .boo:hover {
+        text-decoration: none;
+        color: white;
+      }
+      .boo_t {
+        color: white;
+        padding-right: 450px;
+        padding-left: 450px;
+        padding-bottom: 10px;
+      }
+      .boo_t:hover {
+        text-decoration: none;
+        color: white;
+      }
+
+      @keyframes pulse {
+        0% {
+          background-color: #337ab7;
+        }
+        70% {
+          background-color: #438ac7;
+        }
+        100% {
+          background-color: #337ab7;
+        }
+      }
+
+      /* div:hover {
+        background-color: rgb(225, 225, 225);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-in">
+      <%= yield %>
+      </div>
+    </div>
+  </body>
+  <!-- <footer class="footer"></footer> -->
+</html>
